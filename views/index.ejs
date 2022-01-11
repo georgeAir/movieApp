@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs') %>
+
+<h1>Home Index Page</h1>
+    <ul>
+      <% for (let i = 0; i < films.length; i++) { %>
+        <li>
+          <a href="/home/<%= i %>"><%=films[i].name%></a>
+      </li>
+      <div class=""
+      <img src="<%=films[i].img%>" alt="Image">
+        <p>Synopsis: <%=films[i].synopsis%></p>
+        <p>Personal Review: <%=films[i].personalReview%></p>
+        <p>Duration Of Film: <%=films[i].durationOfFilm%></p>
+        <p>Streamable On: <%=films[i].streamableOn%></p>
+
+        </div>
+          <% } %>
+    </ul>
+
+    <a href="/home/new">Add a new Horror Film</a>
+
+<%- include('./partials/footer.ejs') %>
