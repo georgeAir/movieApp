@@ -1,3 +1,45 @@
 <%- include('./partials/header.ejs') %>
 
+<h1>Edit Movie</h1>
+
+<form action="/home/<%=films.id%>?_method=PUT" method="POST">
+
+  Name: <input
+  type="text"
+  name="name"
+  value="<%=films.name%>"> <br/>
+
+  Movie Image: <input
+  type="text"
+  name="img"
+  value="<%=films.img%>"> <br/>
+
+  Synopsis: <input
+  type="text"
+  name="synopsis"
+  style="height: 40px; width:280px"
+  value="<%=films.synopsis%>"> <br/>
+
+  Personal Review: <input
+  type="text"
+  name="personalReview"
+  style="height: 40px; width:280px"
+  value="<%=films.personalReview%>"> <br/>
+
+  Duration Of Film: <input
+  type="text"
+  name="durationOfFilm"
+  value="<%=films.durationOfFilm%>"> <br/>
+
+  streamable On: <input
+  type="text"
+  name="streamableOn"
+  value="<%=films.streamableOn%>"> <br/>
+
+
+  <input type="submit"  value="Edit Movie">
+</form>
+
+<a href="/home">Back Home</a>
+
 <%- include('./partials/footer.ejs') %>

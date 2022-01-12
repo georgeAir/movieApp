@@ -1,22 +1,34 @@
 <%- include('./partials/header.ejs') %>
 
-<h1>Home Index Page</h1>
+<h1>Home Page</h1>
+
+<section style= "max-width: 1000px; overflow-x: scroll; : center; margin-left: 15%;">
+
+  <div class="contain" style= "">
     <ul>
       <% for (let i = 0; i < films.length; i++) { %>
-        <li>
-          <a href="/home/<%= i %>"><%=films[i].name%></a>
-      </li>
-      <div class=""
-      <img src="<%=films[i].img%>" alt="Image">
-        <p>Synopsis: <%=films[i].synopsis%></p>
-        <p>Personal Review: <%=films[i].personalReview%></p>
-        <p>Duration Of Film: <%=films[i].durationOfFilm%></p>
-        <p>Streamable On: <%=films[i].streamableOn%></p>
 
+        <div class="card" style="width: 18rem; text-align: center ;display: flex; margin: 5px;">
+          <a href="/home/<%= films[i]._id %>"><img src="<%=films[i].img%>" class="card-img-top" alt="image"></a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="/home/<%= films[i]._id %>"><%=films[i].name%></a></h5>
+            <p class="card-text" style=" overflow-x: scroll; max-height: 100px;"><strong>Synopsis:</strong> <%=films[i].synopsis%></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style=" overflow-x: scroll; max-height: 100px;"><strong>Personal Review:</strong> <%=films[i].personalReview%></li>
+            <li class="list-group-item"><strong>Duration Of Film:</strong> <%=films[i].durationOfFilm%></li>
+            <li class="list-group-item"><strong>Streamable On:</strong> <%=films[i].streamableOn%></li>
+          </ul>
+          <div class="card-body">
+            <a href="<%=films[i].trailer%>" class="card-link">Trailer of <%=films[i].name%></a>
+          </div>
         </div>
+
           <% } %>
     </ul>
+  </div>
 
-    <a href="/home/new">Add a new Horror Film</a>
+</section>
+  <!-- <a href="/home/new">Add a new Horror Film</a> -->
 
 <%- include('./partials/footer.ejs') %>

@@ -9,8 +9,9 @@ const filmsSchema = new Schema({
   personalReview: String,
   img: String,
   durationOfFilm: String,
-  streamableOn: String
-})
+  streamableOn: String,
+  trailer: String
+},{timestamps:true })
 
 /// call 'model()'
 // will initialize the collection

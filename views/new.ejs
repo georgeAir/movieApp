@@ -1,42 +1,51 @@
 <%- include('./partials/header.ejs') %>
 
-<h1>Add a Horror Film</h1>
-
 <form action="/home" method="POST">
 
-  <fieldset>
-      <label for=“img”>Image</label>
-      <input type=“url” name=“img”
-      placeholder=“Enter”>
+<h1>Add a Horror Film</h1>
+
+<div class="newDiv">
+
+  <fieldset class="newField">
+      <label for="img">Image:</label>
+      <input type="text" name="img"
+      placeholder="Image URL">
   </fieldset>
 
-  <fieldset>
-    <label for="title">Title:</label>
-    <input type="text" name="title" placeholder="Enter new film name">
+  <fieldset class="newField">
+    <label for="name">Title:</label>
+    <input type="text" name="name" placeholder="Enter new film name">
   </fieldset>
 
-  <fieldset>
+  <fieldset class="newField">
     <label for="synopsis">Synopsis:</label>
-    <input type="text" name="synopsis" placeholder="synopsis for film">
+    <input type="text" style="height: 40px; width:280px" name="synopsis" placeholder="Summary for film">
   </fieldset>
 
-  <fieldset>
+  <fieldset class="newField">
     <label for="personalReview">Personal Review:</label>
-    <input type="text" name="personalReview" placeholder="Enter Personal Review">
+    <input type="text" style="height: 40px; width:280px" name="personalReview" placeholder="Enter Personal Review">
   </fieldset>
 
-  <fieldset>
+  <fieldset class="newField">
     <label for="durationOfFilm">Duration Of Film:</label>
-    <input type="text" name="durationOfFilm" placeholder="Enter how long the movie is">
+    <input type="text" name="durationOfFilm" placeholder="How long the movie is">
   </fieldset>
 
-  <fieldset>
+  <fieldset class="newField">
+    <label for="trailer">Trailer:</label>
+    <input type="text" name="trailer" placeholder="Trailer">
+  </fieldset>
+
+  <fieldset class="newField">
     <label for="streamableOn">Streamable On:</label>
     <input type="text" name="streamableOn" placeholder="Where can you watch it">
   </fieldset>
 
 
   <button type="submit">Click to add Film.</button>
+
+  </div>
 </form>
 
 

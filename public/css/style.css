@@ -1,0 +1,111 @@
+body{
+  background-image: url('https://images.unsplash.com/photo-1610997634568-5b6d91505cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-size: cover;
+  width: 100vw;
+}
+
+h1{
+  color: gray;
+  text-align: center;
+  font-size: 3em;
+  animation-name: header;
+  /* animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+.headerNav{
+  width: 300px;
+  justify-content: flex-end;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0%;
+}
+.navigation{
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot{
+  margin-right: 0%;
+}
+
+@keyframes header {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+
+.card{
+  float:left;
+}
+.card:hover {
+  box-shadow: 5px 12px 30px 5px rgba(255, 255, 255, 0.5);
+}
+
+}
+li{
+  overflow-x: scroll;
+  height: 10px;
+}
+.showContain{
+  width:1000px;
+  position: absolute;
+  justify-content: center;
+  left:45%
+  top: 50%;
+  animation-name: showDrop;
+  animation-duration: 3s;
+}
+@keyframes showDrop{
+  0%{opacity:0}
+  10%{transform: translateY(30px)}
+  100%{transform: translateY(650px), opacity:1}
+}
+.showCard{
+  position: absolute;
+  justify-content: center;
+  left:45%;
+  top: 50%;
+  width: 50%;
+  background-color: rgba(250,250,250,0)
+}
+.showBody{
+  background-color: rgba(250,250,250,0);
+  color:white;
+}
+.showLinks {
+  color: black;
+  margin: 10px;
+}
+
+
+.newDiv{
+  margin-left: 30%;
+  color: white;
+}
+
+.newField{
+  margin: 20px;
+}
+.card-title {
+  text-decoration: underline;
+}
+
+.contain{
+  animation-name: containerDrop;
+  animation-duration: 3s;
+  display: flex;
+  width: 2000px;
+}
+@keyframes containerDrop{
+  0%{opacity:0}
+  10%{transform: translateY(30px)}
+  100%{transform: translateY(650px), opacity:1}
+}

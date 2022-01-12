@@ -1,9 +1,30 @@
 <%- include('./partials/header.ejs') %>
 
-<h1><%= films.name %></h1>
+<h1><%=films.name%></h1>
 
+<div class="showContain" style= "background-color:green;">
 
+<div class="card showCard" style="">
+  <img src="<%=films.img%>" class="card-img-top" alt="image" style="max-height50%; max-width: 50%; margin-left: 25%;">
+  <div class="card-body showBody">
+    <h5 class="card-title"><%=films.name%></h5>
+    <p class="card-text">Synopsis: <%=films.synopsis%></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item showBody">Personal Review: <%=films.personalReview%></li>
+    <li class="list-group-item showBody">Duration Of Film: <%=films.durationOfFilm%></li>
+    <li class="list-group-item showBody">Streamable On: <%=films.streamableOn%></li>
+  </ul>
+  <div class="card-body" style="">
+    <a href="#" class="card-link">Trailer of <%=films.name%></a>
+    <a href="/home/<%= films._id %>/edit"> EDIT <%=films.name%></a>
+    <form action="/home/<%=films._id%>?_method=DELETE" method="POST">
+        <input type="submit" name="" value="Delete">
+      </form>
+  </div>
+</div>
 
+</div>
 
 
 <%- include('./partials/footer.ejs') %>
