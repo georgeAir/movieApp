@@ -8,6 +8,7 @@ const mongoose = require ('mongoose')
 const PORT = 3000
 const Film = require('./models/films')
 
+require('dotenv').config()
 
 //include method override package
 //allows for use of PUT and DELETE requests on our forms
@@ -53,5 +54,5 @@ app.use('/home', filmController)
 
 
 app.listen(3000, () => {
-  console.log(`Server is a scary ${PORT}!!`);
+  console.log(`Server is Running on ${PORT} for horror films`);
 })
