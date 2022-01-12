@@ -12,7 +12,7 @@ require('dotenv').config()
 //include method override package
 //allows for use of PUT and DELETE requests on our forms
 
-const mongoURI = 'mongodb://127.0.0.1:27017/home'
+const mongoURI = process.env.MONGODB_URI
 const db = mongoose.connection
 
 mongoose.connect(mongoURI, {
