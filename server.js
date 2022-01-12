@@ -6,6 +6,7 @@ const session = require('express-session')
 const mongoose = require ('mongoose')
 
 const Film = require('./models/films')
+const PORT = process.env.PORT
 
 require('dotenv').config()
 
