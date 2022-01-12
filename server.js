@@ -53,6 +53,6 @@ app.use('/home', filmController)
 
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log(`Server is Running on ${PORT} for horror films`);
 })
