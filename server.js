@@ -5,7 +5,6 @@ const methodOverride = require('method-override')
 const session = require('express-session')
 const mongoose = require ('mongoose')
 
-const PORT = 3000
 const Film = require('./models/films')
 
 require('dotenv').config()
