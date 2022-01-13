@@ -68,6 +68,9 @@ li{
   10%{transform: translateY(30px)}
   100%{transform: translateY(650px), opacity:1}
 }
+.showBody:hover {
+  background-color: black;
+}
 .showCard{
   position: absolute;
   justify-content: center;
@@ -76,6 +79,7 @@ li{
   width: 50%;
   background-color: rgba(250,250,250,0)
 }
+
 .showBody{
   background-color: rgba(250,250,250,0);
   color:white;
@@ -84,7 +88,9 @@ li{
   color: black;
   margin: 10px;
 }
-
+.showLinks:hover{
+  background-color: black;
+}
 
 .newDiv{
   margin-left: 30%;
@@ -102,10 +108,43 @@ li{
   animation-name: containerDrop;
   animation-duration: 3s;
   display: flex;
-  width: 2000px;
+  width: 3400px;
+  height:1000px;
 }
 @keyframes containerDrop{
   0%{opacity:0}
   10%{transform: translateY(30px)}
   100%{transform: translateY(650px), opacity:1}
+}
+
+.indexSection{
+  max-width: 1000px;
+  overflow-x: scroll;
+  margin-left: 15%;
+}
+
+.homeBody{
+  background-image: url('https://31.media.tumblr.com/7e267bb5a86871fe1ebab63c4acbc325/tumblr_nb0rzozTE51sp07fgo1_500.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:block;
+  width: 100vw;
+  height: 100vh;
+  background-position: center bottom;
+}
+
+.navbar {
+  opacity: 40%;
+}
+
+.enterButton{
+  opacity: 0%;
+  width:15em;
+  height:6em;
+  margin-left:40%;
+  margin-top: 30%;
+}
+
+.enterButton:hover{
+  opacity: 100%;
 }

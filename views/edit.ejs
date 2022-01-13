@@ -1,45 +1,95 @@
-<%- include('./partials/header.ejs') %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit <%=films.name%></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 
-<h1>Edit Movie</h1>
+  </head>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home/new">Add New Film</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <h3>Edit Movie</h3>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<body>
 
 <form action="/home/<%=films.id%>?_method=PUT" method="POST">
 
-  Name: <input
-  type="text"
-  name="name"
-  value="<%=films.name%>"> <br/>
+  <div class="newDiv">
 
-  Movie Image: <input
-  type="text"
-  name="img"
-  value="<%=films.img%>"> <br/>
+  <fieldset class="newField">
+    Name: <input
+    type="text"
+    name="name"
+    value="<%=films.name%>"> <br/>
+  </fieldset>
 
-  Synopsis: <input
-  type="text"
-  name="synopsis"
-  style="height: 40px; width:280px"
-  value="<%=films.synopsis%>"> <br/>
+  <fieldset class="newField">
+    Movie Image: <input
+    type="text"
+    name="img"
+    value="<%=films.img%>"> <br/>
+  </fieldset>
 
-  Personal Review: <input
-  type="text"
-  name="personalReview"
-  style="height: 40px; width:280px"
-  value="<%=films.personalReview%>"> <br/>
+  <fieldset class="newField">
+    Synopsis: <input
+    type="text"
+    name="synopsis"
+    style="height: 40px; width:280px"
+    value="<%=films.synopsis%>"> <br/>
+  </fieldset>
 
-  Duration Of Film: <input
-  type="text"
-  name="durationOfFilm"
-  value="<%=films.durationOfFilm%>"> <br/>
+  <fieldset class="newField">
+    Personal Review: <input
+    type="text"
+    name="personalReview"
+    style="height: 40px; width:280px"
+    value="<%=films.personalReview%>"> <br/>
+  </fieldset>
 
-  streamable On: <input
-  type="text"
-  name="streamableOn"
-  value="<%=films.streamableOn%>"> <br/>
+  <fieldset class="newField">
+    Duration Of Film: <input
+    type="text"
+    name="durationOfFilm"
+    value="<%=films.durationOfFilm%>"> <br/>
+  </fieldset>
+
+  <fieldset class="newField">
+    streamable On: <input
+    type="text"
+    name="streamableOn"
+    value="<%=films.streamableOn%>"> <br/>
+  </fieldset>
 
 
   <input type="submit"  value="Edit Movie">
+  <a href="/home">Back Home</a>
+  <a href="/home/<%=films.id%>">Back to <%=films.name%></a>
+
+  </div>
 </form>
 
-<a href="/home">Back Home</a>
 
 <%- include('./partials/footer.ejs') %>

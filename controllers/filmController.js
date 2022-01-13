@@ -4,12 +4,12 @@ const router = express.Router()
 
 // remember to import your models!!
 // the path will be different from server.js
-const Film = require ('../models/films')
+const Film =require('../models/films')
 
 
 
 ////////////////  Index ROUTE  ////////////////////
-router.get('/', (req, res)=>{
+router.get('/', (req,res)=>{
   console.log('you are hitting the idex route');
   Film.find({}, (error, allFilms) => {
     console.log(allFilms);

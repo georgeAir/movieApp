@@ -6,9 +6,10 @@ const session = require('express-session')
 const mongoose = require ('mongoose')
 
 const Film = require('./models/films')
-const PORT = process.env.PORT
 
 require('dotenv').config()
+const PORT = process.env.PORT
+
 
 //include method override package
 //allows for use of PUT and DELETE requests on our forms
@@ -50,6 +51,12 @@ app.use('/home', filmController)
 // here we are telling APP
 // when you see the URL that starts with /example
 // use this router
+
+
+app.get('/', (req, res)=>{
+  console.log('you are hitting the home route');
+  res.render('home.ejs')
+})
 
 
 
