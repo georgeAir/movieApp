@@ -17,6 +17,51 @@ const PORT = process.env.PORT
 const mongoURI = process.env.MONGODB_URI
 const db = mongoose.connection
 
+
+// SESSIONS
+// HTTP  is a stateless protocol
+// This means that the protocol itself doesnt track
+// whos making the request, or what requests they have made
+// we need a way to give it stateful behavior
+// we need it to  track what the user has already done
+// we're going to do this using cookies and SESSIONS
+// sends to the browser and the browser sends that back
+/// we're going to use cookies, to identify particular users
+/// in what call 'SESSIONS'
+const SESSION_SECRET = process.env.SESSION_SECRET
+console.log('Here is the SESSION_SECRET');
+console.log(SESSION_SECRET);
+
+// now we can set up our SESSION secret
+app.use(session({
+  secret: SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}))
+// this MIDDLEWARE attaches a cookie to our response
+// which will then get saved by the user's browser
+// the browser will then send it back in its requests
+// the server will then be able to identify the user using cookies
+// think of the cookies like a key or maybe an ID card
+
+// when the server gets a request, it checks for cookies
+// and if it finds one attaches a sessions object
+/// to the request object
+// we can use the session object to track information
+//about the user
+
+
+// CUSTOM MIDDLEWARE TO MAKE currentUser AVAILABLE AS A
+/// LOCAL VARIABLE ON ALL ROUTES
+app.use((req,res, next) => {
+  res.locals.currentUser = req.session.currentUser
+  next()
+})
+
+
+
+
+
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -51,6 +96,9 @@ app.use('/home', filmController)
 // here we are telling APP
 // when you see the URL that starts with /example
 // use this router
+
+const userController = require('./controllers/userController')
+app.use('/users', userController)
 
 
 app.get('/', (req, res)=>{

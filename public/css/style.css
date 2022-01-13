@@ -3,7 +3,15 @@ body{
   background-size: cover;
   width: 100vw;
 }
-
+.trailerBody{
+  background-image: url('https://images.unsplash.com/photo-1561722798-9a732d141027?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:block;
+  width: 100vw;
+  height: 100vh;
+  background-position: center bottom;
+}
 h1{
   color: gray;
   text-align: center;
@@ -147,4 +155,22 @@ li{
 
 .enterButton:hover{
   opacity: 100%;
+}
+
+.signinDiv{
+  position: absolute;
+  left:35%;
+  top: 40%;
+  color:white;
+}
+
+.trailerDiv{
+  position: absolute;
+  left:21%;
+  top: 10%;
+}
+
+iframe{
+  width:55vw;
+  height: 52vh;
 }
