@@ -63,7 +63,9 @@ router.post('/', (req,res) => {
   Film.create(req.body, (error, createdFilm) => {
   if(error){
     console.log(error);
-    res.send(error)
+    // res.send(error.message)
+    error: error.message
+    res.render('error.ejs')
   }else{
     console.log(createdFilm);
     res.redirect('/home')

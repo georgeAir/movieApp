@@ -5,10 +5,10 @@ const mongoose = require ('mongoose')
 // connect to the DATABASE
 
 /// for heroku
-const mongoURI = 'mongodb+srv://georgeair:Junior0880@cluster0.0c4th.mongodb.net/home?retryWrites=true&w=majority'
+// const mongoURI = 'mongodb+srv://georgeair:Junior0880@cluster0.0c4th.mongodb.net/home?retryWrites=true&w=majority'
 
 ///for local
-// const mongoURI ='mongodb://127.0.0.1:27017/home'
+const mongoURI ='mongodb://127.0.0.1:27017/home'
 
 
 
@@ -50,7 +50,7 @@ Film.create(
       },{
         name: "Jeepers Creepers",
         synopsis: "After making a horrific discovery in the basement of an old abandoned church, Trish (Gina Philips) and her brother Darry (Justin Long) watch their routine road trip home from college turn into a heart-stopping race for their lives. They find themselves the chosen prey of an indestructible force that relentlessly pursues them.",
-        personalReview:"",
+        personalReview:"A suspense film like no other. By the end of the movie it will have you second guessing that cross country road trip. Two teenagers driving back home for the school break accidentally see something they were NOT supposed to which begins the hunt.",
         img: "https://i.ebayimg.com/images/g/ZdgAAMXQiM5Q9tP~/s-l500.jpg",
         durationOfFilm: "1h 30m",
         streamableOn: "Amazon Prime",
@@ -58,7 +58,7 @@ Film.create(
       },{
         name: "The Nun",
         synopsis: "When a young nun at a cloistered abbey in Romania takes her own life, a priest with a haunted past and a novitiate on the threshold of her final vows are sent by the Vatican to investigate. Together, they uncover the order's unholy secret. Risking not only their lives but their faith and their very souls, they confront a malevolent force in the form of a demonic nun.",
-        personalReview:"If you like the orignal games of Resident Evil then you will like this one. In my opinion it is one of the better Resident Evil movies from the whole franchise. You will see all the major landmarks and charecters from the original game along with all the jump scares.",
+        personalReview:"The long awaited horror film from the Insidous series. Watch as you learn the origin of the terrifying demonic Nun that started it all.",
         img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmqcNSxlXd3RjXsnWu1dw_NjtdFrpKHsSsxl4y7EX_cbN7oeAz",
         durationOfFilm: "1h 36m",
         streamableOn: "HBO Max",
@@ -66,7 +66,7 @@ Film.create(
       },{
         name: "The Haunting in Connecticut",
         synopsis: "When their son Matt (Kyle Gallner) receives a diagnosis of cancer, Sara (Virginia Madsen) and Peter (Martin Donovan) Campbell move to Connecticut to be closer to his doctors. At first all is well, but then Matt becomes increasingly disturbed by what appears to be paranormal activity. Sara turns to a priest for help, and the ghosts are seemingly banished -- but Matt's condition takes a sudden and unexplained turn for the worse, and the lives of Sara and the rest of her family are endangered.",
-        personalReview:"If you like the orignal games of Resident Evil then you will like this one. In my opinion it is one of the better Resident Evil movies from the whole franchise. You will see all the major landmarks and charecters from the original game along with all the jump scares.",
+        personalReview:"A fine, horror ghost film that features a stellar cast and a decently smart script. The photography is done well enough that it helps to elevate the standard scares that come along with a movie like this, but really it is the performances and the direction that make this much better than it could have been. Gallner totally owns this film, displaying both moments of subtlety and explosiveness with measured execution. Madsen and Donovan are wonderful as the concerned and broken parents of a family on the brink, and Koteas brings a level of gravitas that this film really needs. Overall, a really fun time.",
         img: "https://flxt.tmsimg.com/assets/p190884_p_v13_ah.jpg",
         durationOfFilm: "1h 42m",
         streamableOn: "Hulu, HBO Max",
@@ -74,7 +74,7 @@ Film.create(
       },{
         name: "Poltergeist",
         synopsis: "Strange and creepy happenings beset an average California family, the Freelings -- Steve (Craig T. Nelson), Diane (JoBeth Williams), teenaged Dana (Dominique Dunne), eight-year-old Robbie (Oliver Robins), and five-year-old Carol Ann (Heather O'Rourke) -- when ghosts commune with them through the television set. Initially friendly and playful, the spirits turn unexpectedly menacing, and, when Carol Ann goes missing, Steve and Diane turn to a parapsychologist and eventually an exorcist for help.",
-        personalReview:"If you like the orignal games of Resident Evil then you will like this one. In my opinion it is one of the better Resident Evil movies from the whole franchise. You will see all the major landmarks and charecters from the original game along with all the jump scares.",
+        personalReview:"An old one, but stood the test of time. Although a remake was made in 2015 the original is still the best in my opinion.",
         img: "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/poltergeist-pi.jpg?itok=4Wn54wHx",
         durationOfFilm: "2 hours",
         streamableOn: "Tubi, Amazon Prime",
@@ -82,7 +82,7 @@ Film.create(
       },{
         name: "Insidous",
         synopsis: "Parents (Patrick Wilson, Rose Byrne) take drastic measures when it seems their new home is haunted and their comatose son (Ty Simpkins) is possessed by a malevolent entity.",
-        personalReview:"If you like the orignal games of Resident Evil then you will like this one. In my opinion it is one of the better Resident Evil movies from the whole franchise. You will see all the major landmarks and charecters from the original game along with all the jump scares.",
+        personalReview:"Definitely a very well executed possession based film with scary scenes very well executed. Few jumpscares that are very well timed. It keeps you on your toes in the climax. I had previously watched a film called, The possession  and it was terrible but Insidious, well it gets it right in all departments. ",
         img: "https://flxt.tmsimg.com/assets/p8494407_p_v10_ak.jpg",
         durationOfFilm: "1h 43m",
         streamableOn: "Hulu",
@@ -90,7 +90,7 @@ Film.create(
       },{
         name: "Ready or Not",
         synopsis: "Grace couldn't be happier after she marries the man of her dreams at his family's luxurious estate. There's just one catch -- she must now hide from midnight until dawn while her new in-laws hunt her down with guns, crossbows and other weapons. As Grace desperately tries to survive the night, she soon finds a way to turn the tables on her not-so-lovable relatives.",
-        personalReview:"If you like the orignal games of Resident Evil then you will like this one. In my opinion it is one of the better Resident Evil movies from the whole franchise. You will see all the major landmarks and charecters from the original game along with all the jump scares.",
+        personalReview:"After marrying her fiance, Grace meets her fiance's family at his parents mansion. What was thought to be a nice get together turns out to be something a lot more sinister and thrilling. I personally enjoyed this movie, it kept me on my feet and the reasoning behind it all is very interesting.",
         img: "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/ready-or-not-movie-poster-image0.jpg?itok=xlaUipvy",
         durationOfFilm: "1h 35m",
         streamableOn: "Apple TV, Amazon Prime",
@@ -98,7 +98,7 @@ Film.create(
       },{
         name: "A Quiet Place",
         synopsis: "If they hear you, they hunt you. A family must live in silence to avoid mysterious creatures that hunt by sound. Knowing that even the slightest whisper or footstep can bring death, Evelyn and Lee are determined to find a way to protect their children while desperately searching for a way to fight back.",
-        personalReview:"If you like the orignal games of Resident Evil then you will like this one. In my opinion it is one of the better Resident Evil movies from the whole franchise. You will see all the major landmarks and charecters from the original game along with all the jump scares.",
+        personalReview:"In this suspensefull horror film monsters take over the world and kill anything that seems to make noise. You follow a family of four that used to be five throughout their journey on how they survive and evade the monsters.",
         img: "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_.jpg",
         durationOfFilm: "1h 30m",
         streamableOn: "YouTube, Apple TV, Amazon Prime",

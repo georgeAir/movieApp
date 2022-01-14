@@ -4,7 +4,7 @@ const {Schema, model} = mongoose
 
 
 const filmsSchema = new Schema({
-  name: String,
+  name: {type: String, required: true},
   synopsis: String,
   personalReview: String,
   img: String,
