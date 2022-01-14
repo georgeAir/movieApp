@@ -20,3 +20,7 @@ Specifically on the index page alone will be a seed file and you will have all t
 
 ## Stretch Goals
 ##### Some stretch goals were mostly be css related. I wanted to see if its possible if once the user hovers over the Title of the movie on the show page a short clip of the trailer will play. Otherwise I will make it where the image itself is the link for the trailer.
+
+## Deployment Link On Heroku
+
+##### https://movie-list-horror.herokuapp.com/
