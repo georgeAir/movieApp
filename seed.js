@@ -5,10 +5,10 @@ const mongoose = require ('mongoose')
 // connect to the DATABASE
 
 /// for heroku
-const mongoURI = 'mongodb+srv://georgeair:Junior0880@cluster0.0c4th.mongodb.net/home?retryWrites=true&w=majority'
+// const mongoURI = 'mongodb+srv://georgeair:Junior0880@cluster0.0c4th.mongodb.net/home?retryWrites=true&w=majority'
 
 ///for local
-// const mongoURI ='mongodb://127.0.0.1:27017/home'
+const mongoURI ='mongodb://127.0.0.1:27017/home'
 
 
 
