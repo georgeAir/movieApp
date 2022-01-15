@@ -146,16 +146,16 @@ li{
 }
 
 .enterButton{
-  opacity: 0%;
+  /* opacity: 0%; */
   width:15em;
   height:6em;
   margin-left:40%;
   margin-top: 30%;
 }
 
-.enterButton:hover{
+/* .enterButton:hover{
   opacity: 100%;
-}
+} */
 
 .signinDiv{
   position: absolute;
@@ -173,4 +173,29 @@ li{
 iframe{
   width:55vw;
   height: 52vh;
+}
+
+
+@media all and (max-width: 800px) {
+  .trailerDiv{
+    left: 8%;
+    top: 30%;
+  }
+  iframe{
+    width:80vw;
+    height: 40vh;
+  }
+  .showCard{
+    position: fixed;
+    left:30%;
+    top:10%;
+  }
+  .showContain{
+    position: absolute;
+    justify-content: center;
+    left:10%
+    top: 15%;
+    animation-name: none;
+    animation-duration: 3s;
+  }
 }
